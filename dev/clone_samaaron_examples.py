@@ -2,7 +2,7 @@
 - script to run iterate through Sonic Pi /src/examples and copy all files containig 'Sam Aaron'
 """
 
-import os
+import os, re
 
 def copy(srcdir, destdir):
     def copy(currentdir):
@@ -21,4 +21,4 @@ def copy(srcdir, destdir):
     copy(srcdir)
 
 if __name__=="__main__":
-    copydir("~/sonic-pi/etc/examples", "./sonic_pi_examples")
+    copy("../sonic-pi-master/etc/examples", "./sonic_pi_examples")
