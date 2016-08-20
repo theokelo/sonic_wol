@@ -1,2 +1,1 @@
-- clone all @samaaron examples via script
-- get sonic-pi.el working
+- sonic-pi.el
