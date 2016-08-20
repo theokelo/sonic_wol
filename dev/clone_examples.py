@@ -7,17 +7,16 @@ import os, re
 def copy(srcdir, destdir):
     def copy(currentdir):
         for item in os.listdir(currentdir):
-            print currentdir+"/"+item
+            # print currentdir+"/"+item
             if os.path.isdir(currentdir+"/"+item):
+                print "[dir] %s" % item
                 copy(currentdir+"/"+item)
             else:
+                print "[file] %s" % item                            
                 text=file(currentdir+"/"+item).read()
-                if re.search("sam aaron", text, re.I):
-                    dest=file(destdir+"/"+item, 'w')
-                    dest.write(text)
-                    dest.close()
-                else:
-                    pass
+                dest=file(destdir+"/"+item, 'w')
+                dest.write(text)
+                dest.close()
     copy(srcdir)
 
 if __name__=="__main__":
