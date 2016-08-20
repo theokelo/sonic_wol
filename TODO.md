@@ -1,0 +1,1 @@
+- get sonic-pi.el working
