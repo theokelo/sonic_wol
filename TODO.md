@@ -1,8 +1,5 @@
 # todo
 
-- parse /etc/doc code fragments
-  - markdown
-  - one file per code block
 - parse synth headers
 - reinstall sonic-pi.el
   - copy existing implementation
