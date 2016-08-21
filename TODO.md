@@ -12,5 +12,3 @@
   - https://github.com/supercollider/supercollider/blob/master/examples/demonstrations/stealthissound.scd
 - supercollider integration test
   - https://github.com/samaaron/sonic-pi/blob/master/SYNTH_DESIGN.md
-- aerodynamic
-  - https://aimxhaisse.com/aerodynamic-en.html
