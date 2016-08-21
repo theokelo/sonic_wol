@@ -1,5 +1,5 @@
 """
-- script to clone all examples
+- script to clone all sample.rb files
 """
 
 import os, re
