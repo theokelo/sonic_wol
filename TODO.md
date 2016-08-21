@@ -12,8 +12,6 @@
   - https://github.com/supercollider/supercollider/blob/master/examples/demonstrations/stealthissound.scd
 - supercollider integration test
   - https://github.com/samaaron/sonic-pi/blob/master/SYNTH_DESIGN.md
-- lectronice (sp)
-  - https://github.com/lectronice/live-coding/blob/master/grapefruit-honey.rb
 - aerodynamic
   - https://aimxhaisse.com/aerodynamic-en.html
 - http://blog.mynarz.net/2015/12/coding-dub-techno-in-ruby-using-sonic-pi.html

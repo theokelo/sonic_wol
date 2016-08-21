@@ -1,4 +1,4 @@
-# https://raw.githubusercontent.com/lectronice/live-coding/master/grapefruit-honey.rb
+# https://github.com/lectronice/live-coding/blob/master/grapefruit-honey.rb
 
 # Grapefruit Honey (v.0.2)
 
