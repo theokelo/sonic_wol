@@ -1,5 +1,5 @@
 """
-- script to clone all sample.rb files
+- script to clone all sample.rb files in /etc/examples
 """
 
 import os, re
@@ -20,4 +20,4 @@ def clone(srcdir, destdir):
     clone(srcdir)
 
 if __name__=="__main__":
-    clone("../sonic-pi-master/etc/examples", "./demos/sonic_pi_examples")
+    clone("../sonic-pi-master/etc/examples", "./demos/sonic_pi/examples")

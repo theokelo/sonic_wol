@@ -1,5 +1,5 @@
 """
-- script to filter all code blocks from tutorial
+- script to filter all code blocks from /etc/doc/tutorial
 """
 
 import os, re
@@ -12,7 +12,7 @@ def filter(srcdir, destdir):
                 print "[dir] %s" % item
                 filter(newitem)
             else:
-                print "[file] %s" % item                            
+                # print "[file] %s" % item                            
                 text=file(newitem).read()
                 tokens=re.split("```", text)[1:][::2]
                 count=0
@@ -21,6 +21,7 @@ def filter(srcdir, destdir):
                         continue
                     filename="%s~%i.rb" % (re.sub("\\W|\\.", "~", item[:-3]),
                                            count)
+                    print "[file] %s" % filename                            
                     dest=file(destdir+"/"+filename, 'w')
                     dest.write(token)
                     dest.close()
@@ -28,4 +29,4 @@ def filter(srcdir, destdir):
     filter(srcdir)
 
 if __name__=="__main__":
-    filter("../sonic-pi-master/etc/doc/tutorial",  "./demos/sonic_pi_tutorial")
+    filter("../sonic-pi-master/etc/doc/tutorial",  "./demos/sonic_pi/tutorial")
