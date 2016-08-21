@@ -1,23 +1,23 @@
 """
-- script to clone all sample.rb files in /etc/examples
+- script to filter all sample.rb files in /etc/examples
 """
 
 import os, re
 
-def clone(srcdir, destdir):
-    def clone(currentdir):
+def filter(srcdir, destdir):
+    def filter(currentdir):
         for item in os.listdir(currentdir):
             newitem=currentdir+"/"+item
             if os.path.isdir(newitem):
                 print "[dir] %s" % item
-                clone(newitem)
+                filter(newitem)
             else:
                 print "[file] %s" % item                            
                 text=file(newitem).read()
                 dest=file(destdir+"/"+item, 'w')
                 dest.write(text)
                 dest.close()
-    clone(srcdir)
+    filter(srcdir)
 
 if __name__=="__main__":
-    clone("../sonic-pi-master/etc/examples", "./demos/sonic_pi/examples")
+    filter("../sonic-pi-master/etc/examples", "./demos/sonic_pi/examples")
