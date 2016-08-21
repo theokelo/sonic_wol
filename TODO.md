@@ -14,4 +14,3 @@
   - https://github.com/samaaron/sonic-pi/blob/master/SYNTH_DESIGN.md
 - aerodynamic
   - https://aimxhaisse.com/aerodynamic-en.html
-- http://www.sean.co.uk/books/raspberry-pi-for-dummies/sonic-pi.shtm
