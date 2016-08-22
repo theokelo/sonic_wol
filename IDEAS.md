@@ -1,3 +1,11 @@
+### sticky
+
+- best of @samaaron's examples
+- sunvox -> city of dreams replication 
+- note slider
+- samples
+- slicer
+
 ### tb303 bass
 ### 2016-08-22
 
