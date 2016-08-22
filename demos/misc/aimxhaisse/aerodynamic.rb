@@ -1,12 +1,16 @@
+# https://aimxhaisse.com/aerodynamic-en.html
+#  https://aimxhaisse.com/public/misc/funk.wav 
+
 use_bpm 123
 
 # maquillage = "~/il-macquillage-lady.wav"
 maquillage = "./il-macquillage-lady.wav"
 
 # aerodynamic = "~/funk.wav"
+aerodynamic= "./funk.wav"
 
 load_sample maquillage
-# load_sample aerodynamic
+load_sample aerodynamic
 
 define :sample_chunk do |what, beat, dur, delay|
     beat = beat / 16.0
