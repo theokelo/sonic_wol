@@ -1,3 +1,9 @@
+"""  
+- grep -> search demos
+- list -> synths, effects
+- man -> synth headers
+"""
+
 import cmd
 
 class DocShell(cmd.Cmd):
