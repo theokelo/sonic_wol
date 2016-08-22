@@ -1,5 +1,3 @@
-// https://github.com/supercollider/supercollider/blob/master/examples/demonstrations/stealthissound.scd
-
 //Sound recipes from:
 //Mitchell Sigman (2011) Steal this Sound. Milwaukee, WI: Hal Leonard Books
 //adapted for SuperCollider and elaborated by Nick Collins (http://www.sussex.ac.uk/Users/nc81/index.html)
