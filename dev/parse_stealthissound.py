@@ -1,3 +1,7 @@
+"""
+- script to parse SuperCollider synthdefs in stealthissounds.scd
+"""
+
 # https://github.com/supercollider/supercollider/blob/master/examples/demonstrations/stealthissound.scd
 
 import re
