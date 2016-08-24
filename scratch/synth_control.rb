@@ -1,9 +1,23 @@
 # /etc/doc/tutorial/07.1-Controlling-Running-Synths.md
-# /demos/sonic_pi/tutorial/A-10~controlling~your~sounds~0.rb
+# /etc/doc/tutorial/A.10-controlling-your-sound.md
 
-sn=synth :prophet , sustain: 5
-notes=(scale :e3, :minor_pentatonic, num_octaves: 1)
-notes.size.times do |i|
-  control sn, note: notes[i]
-  sleep 0.5
+=begin
+live_loop :test_0 do
+  s = synth :prophet, note: :e1, sustain: 4
+  4.times do |i|
+    c=rrand(70, 130)
+    control s, cutoff: c
+    sleep 1
+  end
 end
+=end
+
+live_loop :test_1 do 
+  s = synth :prophet, note: :e1, sustain: 4
+  c = 70
+  32.times do |i|
+    control s, cutoff: c+i*2
+    sleep 0.125
+  end
+end
+
