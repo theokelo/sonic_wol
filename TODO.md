@@ -1,5 +1,6 @@
 # todo
 
+- starting server without client
 - doc_shell.py
 - parse synth headers
 - reinstall sonic-pi.el
