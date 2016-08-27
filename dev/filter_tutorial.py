@@ -29,4 +29,4 @@ def filter(srcdir, destdir):
     filter(srcdir)
 
 if __name__=="__main__":
-    filter("../sonic-pi-master/etc/doc/tutorial",  "./demos/sonic_pi/tutorial")
+    filter("../../packages/sonic-pi/etc/doc/tutorial",  "./demos/sonic_pi/tutorial")
