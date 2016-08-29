@@ -1,5 +1,10 @@
+# clicking 
+# 2016-08-29
+
+echo 0 | sudo tee /sys/module/snd_hda_intel/parameters/power_save
+
 # S3
-# 2016-08-20
+# 2016-08-29
 
 http://sonic-wol.s3-website-eu-west-1.amazonaws.com/
 
