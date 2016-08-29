@@ -1,11 +1,26 @@
-live_loop :bass do
-  use_random_seed 13
+define :prophet_bass do |s, q, b1, b2, cs, c0, c1, w|
+  use_random_seed s
   32.times do    
-    n = (rand < 0.8) ? :e1 : :e2
-    a = (rand < 0.8) ? 0.75 : 1.5
-    s = synth :prophet, note: n, amp: a, cutoff: rrand(70, 90), cutoff_slide: 0.2 if rand < 0.9
-    control s, cutoff: rrand(30, 50)
+    nt = (rand < b1) ? :e1 : :e2
+    amp = (rand < b2) ? 0.75 : 1.5
+    sn = synth :prophet, note: nt, amp: amp, cutoff: rrand(c0, c0+w), cutoff_slide: cs if rand < q
+    control sn, cutoff: rrand(c1, c1+w)
     sleep 0.125
   end
 end
+
+Args=[[22682, 0.6, 0.9, 0.8, 0.15, 70, 30, 20],
+      [22682, 0.6, 0.9, 0.8, 0.15, 70, 30, 25],
+      [22682, 0.6, 0.85, 0.8, 0.2, 70, 35, 25],
+      [22682, 0.7, 0.85, 0.8, 0.2, 75, 35, 25],
+      [22682, 0.8, 0.85, 0.8, 0.25, 75, 40, 25],
+      [22682, 0.8, 0.85, 0.8, 0.25, 75, 40, 30],
+      [22682, 0.9, 0.8, 0.8, 0.3, 80, 40, 30],
+      [22682, 0.9, 0.8, 0.8, 0.3, 80, 40, 40],
+      [22682, 0.9, 0.8, 0.8, 0.3, 80, 40, 30],
+      [22682, 0.9, 0.8, 0.8, 0.3, 80, 40, 40],
+      [22682, 0.9, 0.8, 0.8, 0.3, 80, 40, 30],
+      [22682, 0.9, 0.8, 0.8, 0.3, 80, 40, 40]]
+
+Args.each{|args| prophet_bass *args}
 
